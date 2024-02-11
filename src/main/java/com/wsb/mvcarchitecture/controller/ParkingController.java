@@ -5,6 +5,7 @@ import com.wsb.mvcarchitecture.model.CarId;
 import com.wsb.mvcarchitecture.model.CarRequest;
 import com.wsb.mvcarchitecture.service.ParkingService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
+@CrossOrigin(origins = {})
 public class ParkingController {
 
     private final ParkingService parkingService;
